@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 const Document = require("./Document")
 
-mongoose.connect("mongodb+srv://dillon:QjGb1439Zjo3riSU@cluster0.oapmx0i.mongodb.net/?retryWrites=true&w=majority")
+httpServer = mongoose.connect("mongodb+srv://dillon:QjGb1439Zjo3riSU@cluster0.oapmx0i.mongodb.net/?retryWrites=true&w=majority")
 
 const io = require("socket.io")(httpServer, {
   cors: {
