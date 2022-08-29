@@ -3,7 +3,7 @@ const Document = require("./Document")
 
 mongoose.connect("mongodb://google-docs-clone-server.netlify.app")
 
-const io = require("socket.io")(http, {
+const io = require("socket.io")(httpServer, {
   cors: {
     origin: "https://dillongodwin-google-docs-clone.netlify.app/",
     methods: ["GET", "POST"],
