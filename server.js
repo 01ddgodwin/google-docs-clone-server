@@ -1,14 +1,16 @@
 const mongoose = require("mongoose")
 const Document = require("./Document")
 
-mongoose.connect("mongodb://localhost:google-docs-clone")
+mongoose.connect("mongodb+srv://dillon:QjGb1439Zjo3riSU@cluster0.oapmx0i.mongodb.net/?retryWrites=true&w=majority")
 
-const io = require("socket.io")(3001, {
+const io = require("socket.io")(httpServer, {
   cors: {
-    origin: "https://dillongodwin-google-docs-clone.netlify.app/",
+    origin: "https://dillongodwin-google-docs-clone.netlify.app",
     methods: ["GET", "POST"],
   },
 });
+
+// QjGb1439Zjo3riSU
 
 const defaultValue = ""
 
